@@ -1,0 +1,72 @@
+/* sora-300 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/sora-v17-latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* sora-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/sora-v17-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* sora-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/sora-v17-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+  /* Colors */
+  --tag-background: #f2eafd;
+  --heading: #20293a;
+  --primary-text: #6c727f;
+  --page-background: #fafaf9;
+  --card-background: #ffffff;
+  --secondary-text: #6326a2;
+  --divider: #e5eaf0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+h1,
+p,
+hr {
+  margin: 0;
+}
+
+body {
+  font-family: "Sora", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.text-preset-1 {
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+.text-preset-2 {
+  font-weight: 300;
+  font-size: 0.875rem;
+}
+
+.text-preset-3 {
+  font-weight: 400;
+  font-size: 0.75rem;
+}
