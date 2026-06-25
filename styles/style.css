@@ -22,6 +22,40 @@ article {
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
 }
 
+@media (hover: hover) {
+  article {
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
+  }
+
+  @keyframes jiggle {
+    0% {
+      transform: scale(1.04) rotate(0deg);
+    }
+    20% {
+      transform: scale(1.04) rotate(-4deg);
+    }
+    40% {
+      transform: scale(1.04) rotate(3deg);
+    }
+    60% {
+      transform: scale(1.04) rotate(-2deg);
+    }
+    80% {
+      transform: scale(1.04) rotate(1deg);
+    }
+    100% {
+      transform: scale(1.04) rotate(0deg);
+    }
+  }
+
+  article:hover {
+    animation: jiggle 0.4s ease forwards;
+    box-shadow: 14px 14px 24px rgba(0, 0, 0, 0.12);
+  }
+}
+
 article img {
   width: 100%;
   max-width: 21rem;
